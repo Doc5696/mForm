@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1 class="lato__bold">Заполните, пожалуйста, форму</h1>
+  </header>
+
+
+  <main class="wrapper lato__regular">
+    <form class="main__form" action="#" method="post" id="sendform_1_1" enctype="multipart/form-data">
+      <input type="hidden" name="project_name" value="Registration">
+
+      <div class="form__left">
+        <p>Добавьте свое фото</br><span class="file__include">(будет использовано для обложки видео)</span></p>
+        <div class="form__photo">
+          <input name="file[]" value="1" size="40" type="file" multiple />
+        </div>
+      </div>
+
+      <div class="form__right">
+        <div class="form__name form-item">
+          <p>Имя, Фамилия *</p>
+          <input type="text" name="name" id="name" placeholder="Константин Константинопольский" required>
+        </div>
+        <div class="form__phone form-item">
+          <p>Телефон</p>
+          <input type="number" name="phone" id="phone" placeholder="+38 099 99 99 999" required>
+        </div>
+        <div class="form__mail form-item">
+          <p>Електронна пошта</p>
+          <input type="text" name="email" id="email" placeholder="konstant@gmail.com" required>
+        </div>
+        <div class="form__fb-link form-item">
+          <p>Ссылка на профиль Facebook</p>
+          <input type="text" name="fbLink" id="fbLink" placeholder="https://www.facebook.com/konstatynopolskiy" required>
+        </div>
+        <div class="form__insta-link form-item">
+          <p>Ссылка на профиль Instagram</p>
+          <input type="text" name="instaLink" id="instaLink" placeholder="https://www.instagram.com/konstantine/"
+            required>
+        </div>
+        <div class="form__theme form-item">
+          <p>Тема съемок</p>
+          <input type="text" name="theme" id="theme" placeholder="Создание имиджа рок-звезды" required>
+        </div>
+        <div class="form__descripion form-item">
+          <p>Регалии, дополнительная информация</p>
+          <textarea type="text" rows="5" name="message" class="rfield" id="v_desc"
+            placeholder="Совладелец имидж-студии art-studio, имиджмейкер, стилист, cоавтор и спикер проэкта art-shool. Обучение: ХНПУим. Сковороды направление дизайн одежды; Финансовая школа Латенко; Школа имиджа и стиля Stella Clar studio"
+            required></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" name="sendMail" class="btn_submit btn disabled" id="btn-send">Отправить</button>
+        </div>
+      </div>
+
+    </form>
+  </main>
+
+  <footer>
+    <a href="https://molfarforum.com/" target="_blank" rel="noopener noreferrer">
+      <img src="/img/transparentBg_logo.png" alt="Molfar Beauty Forum">
+    </a>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  
+</body>
+
+</html>
