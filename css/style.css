@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 body{
-  background: no-repeat center url('img/bg_logo.png');
+  background: no-repeat center url('../img/bg_logo.png');
   background-position-y: -1000%;
   background-position-x: 150%;
 }
